@@ -19,3 +19,7 @@ printf("this string is not a palindrome");
 }
 getch();
 }
+
+OUTPUT:
+enter the string helooo
+this string is not a palindrome
