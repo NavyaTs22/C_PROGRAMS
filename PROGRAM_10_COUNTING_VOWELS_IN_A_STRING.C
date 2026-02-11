@@ -19,4 +19,8 @@ int main() {
     return 0;
 }
 
-    
+  OUTPUT:
+Enter a string:hell
+No. of vowels:1
+
+=== Code Execution Successful ===
