@@ -43,12 +43,37 @@ void traverse() {
     }
 }
 
+void delete_at_beg() {
+
+struct node *temp, *last;
+
+if(head==NULL)
+{
+    printf("the list is empty");
+}
+else if(head->next==head){
+    
+    free(head);
+    head=NULL;
+}
+else {
+    last=head;
+    while(last->next!=head)
+    {
+        last=last->next;
+    }
+    temp=head;
+    head=head->next;
+    last->next=head;
+    free(temp);
+}
+}
 int main()
 {
 insert_at_end(10);
 insert_at_end(20);
 insert_at_end(30);
-
+delete_at_beg();
 traverse();
 
 return 0;
@@ -56,6 +81,5 @@ return 0;
 }
 
 OUPUT :
-10
 20
 30
